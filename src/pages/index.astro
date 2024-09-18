@@ -13,9 +13,12 @@ import Carrusel from '../components/carrusel.astro';
 
 <Layout title="Matrix Consultora">
   <main class="mx-auto">
-    <div class="flex flex-col w-full bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400 items-center pt-12 mb-36">
+    <div class="flex flex-col w-full bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400 items-center pt-12 ">
       <div class="w-full md:h-screen flex justify-center py-4">
-        <Presentation />
+        <section id="inicio">
+          <Presentation />
+        </section>
+       
       </div>
 
       <div class="md:flex flex-col w-full bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 pt-12 min-h-screen">
@@ -40,7 +43,7 @@ import Carrusel from '../components/carrusel.astro';
       </div>
 
       <div class="w-full bg-gradient-to-br from-blue-100 via-gray-300 to-gray-100 md:px-14">
-        <section id="services" class="py-16 px-10">
+        <section id="servicios" class="py-16 px-10">
           <div class="container mx-auto px-4 text-center">
             <!-- Título -->
             <h2 class="text-3xl md:text-5xl font-bold mb-8 text-gray-800">
@@ -71,8 +74,11 @@ import Carrusel from '../components/carrusel.astro';
         <Carrusel />
       </div>
 
-      <div class="bg-gray-100 w-full">
-        <Contactos />
+      <div class="bg-gray-100 w-screen">
+        <section id="contactos">
+          <Contactos />
+        </section>
+        
       </div>
     </div>
   </main>
