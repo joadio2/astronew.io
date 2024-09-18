@@ -4,6 +4,8 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://joadio2.github.io",
+  base: "astronew.io",
   integrations: [
     tailwind(),
     icon({
