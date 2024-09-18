@@ -3,27 +3,77 @@ import Layout from '../layouts/Layout.astro';
 import Presentation from '../components/Presentation.astro';
 import Stats from '../components/stats.astro';
 import Feature from '../components/Feature.astro';
-import Service from  '../components/Servicios.astro';
+import Servicios from '../components/Servicios.astro';
+import Contactos from '../components/Contactos.astro';
+// JSON
+import informacion from '../../public/informacion.json';
+import servicesData from '../../public/servicios.json';
+import Carrusel from '../components/carrusel.astro';
 ---
 
 <Layout title="Matrix Consultora">
-	<main class="  mx-auto ">
-		<div class=" flex flex-col w-full  bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400 items-center pt-12 ">
-			<div class=" w-full md:h-screen flex justify-center py-4 md:py-40">
-				<Presentation />
-			</div>
-			<div class="hidden md:flex flex-col w-full bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 pt-12 md:h-full py-10">
-				<Stats />
-			  </div>
-			  
-			  <div class="flex sm:hidden flex-col w-full bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 pt-12 h-full py-4">
-				<Feature />
-			  </div>
-			  <div class="w-full bg-gradient-to-br from-blue-100  via-gray-300 to-gray-100 ">
-				<Service/>
-			  </div>
-		</div>
-	
-	</main>
-</Layout>
+  <main class="mx-auto">
+    <div class="flex flex-col w-full bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400 items-center pt-12 mb-36">
+      <div class="w-full md:h-screen flex justify-center py-4">
+        <Presentation />
+      </div>
 
+      <div class="md:flex flex-col w-full bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 pt-12 min-h-screen">
+        <!-- Carrusel principal -->
+        <div class="carousel carousel-vertical rounded-box h-screen w-full">
+          <!-- Elementos del carrusel -->
+          {informacion.map((section, index) => (
+            <div
+              class="carousel-item h-full w-full flex items-center justify-center"
+              data-key={index}
+            >
+              <Stats
+                imageSrc={section.imageSrc}
+                altText={section.altText}
+                title={section.title}
+                content={section.content}
+                imagePosition={section.imagePosition}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div class="w-full bg-gradient-to-br from-blue-100 via-gray-300 to-gray-100 md:px-14">
+        <section id="services" class="py-16 px-10">
+          <div class="container mx-auto px-4 text-center">
+            <!-- Título -->
+            <h2 class="text-3xl md:text-5xl font-bold mb-8 text-gray-800">
+              {servicesData.title}
+            </h2>
+
+            <!-- Descripción -->
+            <p class="text-lg md:text-xl text-gray-700 mb-12">
+              {servicesData.description}
+            </p>
+
+            <!-- Grid de Servicios -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {servicesData.services.map(service => (
+                <Servicios
+                  imageSrc={service.imageSrc}
+                  altText={service.altText}
+                  title={service.title}
+                  content={service.content}
+                />
+              ))}
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div>
+        <Carrusel />
+      </div>
+
+      <div class="bg-gray-100 w-full">
+        <Contactos />
+      </div>
+    </div>
+  </main>
+</Layout>

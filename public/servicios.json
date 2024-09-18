@@ -1,0 +1,42 @@
+{
+  "title": "Nuestros Servicios",
+  "description": "Ofrecemos soluciones tecnológicas que impulsan el crecimiento empresarial. Desde desarrollos de software personalizados hasta asistencia comercial avanzada.",
+  "services": [
+    {
+      "imageSrc": "/images/web.jpg",
+      "altText": "Desarrollo de Software",
+      "title": "Desarrollo de Software",
+      "content": "Creamos aplicaciones a medida que se ajustan a las necesidades de tu negocio, optimizando procesos y mejorando la experiencia del cliente."
+    },
+    {
+      "imageSrc": "/images/asistencia.jpg",
+      "altText": "Asistencia Comercial",
+      "title": "Asistencia Comercial",
+      "content": "Optimiza tus esfuerzos comerciales con nuestro soporte estratégico, aumentando tu eficiencia y mejorando la captación de nuevos clientes."
+    },
+    {
+      "imageSrc": "/images/integracion.jpg",
+      "altText": "Soluciones de Integración",
+      "title": "Soluciones de Integración",
+      "content": "Integramos sistemas y plataformas empresariales para mejorar la comunicación interna y la gestión eficiente de los datos."
+    },
+    {
+      "imageSrc": "/images/automatizacion.jpg",
+      "altText": "Automatización de Procesos",
+      "title": "Automatización de Procesos",
+      "content": "Implementamos soluciones para reducir el tiempo invertido en tareas repetitivas, permitiéndote concentrarte en el crecimiento de tu negocio."
+    },
+    {
+      "imageSrc": "/images/tecnologia.jpg",
+      "altText": "Consultoría Tecnológica",
+      "title": "Consultoría Tecnológica",
+      "content": "Te asesoramos en la implementación de las mejores tecnologías para impulsar tu empresa, desde infraestructura hasta estrategias de TI."
+    },
+    {
+      "imageSrc": "/images/diseno.jpg",
+      "altText": "Diseño UX/UI",
+      "title": "Optimización UX/UI",
+      "content": "Mejoramos la experiencia de usuario a través de diseños intuitivos, optimizados para aumentar la satisfacción del cliente y la conversión."
+    }
+  ]
+}

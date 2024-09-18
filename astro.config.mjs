@@ -7,10 +7,8 @@ export default defineConfig({
   integrations: [
     tailwind(),
     icon({
-      collections: {
-        mdi: import("@iconify-json/mdi/icons.json", {
-          assert: { type: "json" },
-        }), // Usar la afirmación de tipo JSON
+      include: {
+        mdi: ["*"], // (Default) Loads entire Material Design Icon set
       },
     }),
   ],

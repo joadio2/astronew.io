@@ -1,0 +1,34 @@
+{
+  "values": [
+    {
+      "title": "Transparencia",
+      "description": "Promovemos la honestidad y la apertura en todas nuestras interacciones.",
+      "icon": "mdi:beach"
+    },
+    {
+      "title": "Confianza",
+      "description": "Fomentamos la confianza mutua entre los miembros del equipo y nuestros clientes.",
+      "icon": "mdi:account-lock"
+    },
+    {
+      "title": "Trabajo en Equipo",
+      "description": "Creemos en el poder del esfuerzo colectivo para alcanzar grandes metas.",
+      "icon": "mdi:account-group"
+    },
+    {
+      "title": "Innovación",
+      "description": "Aportamos ideas nuevas y soluciones creativas a los problemas complejos.",
+      "icon": "mdi:atom"
+    },
+    {
+      "title": "Integridad",
+      "description": "Nos guiamos por altos estándares éticos en todo lo que hacemos.",
+      "icon": "mdi:codepen"
+    },
+    {
+      "title": "Compromiso",
+      "description": "Estamos dedicados a cumplir con nuestras responsabilidades y a superar expectativas.",
+      "icon": "mdi:account-star"
+    }
+  ]
+}
